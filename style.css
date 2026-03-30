@@ -598,6 +598,8 @@ p  { color: var(--text-mid); }
 .footer-bottom .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 6px;
 }
 .footer-bottom p { color: rgba(255,255,255,0.4); font-size: 0.82rem; margin: 0; }
