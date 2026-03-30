@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Toma Coaching</title>
+  <meta name="description" content="Neem contact op met Toma Coaching. Plan een kennismakingsgesprek of stel je vraag via het formulier.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <main>
+
+    <!-- ── PAGE HERO ── -->
+    <section class="page-hero">
+      <div class="container reveal">
+        <span class="label">Laten we kennismaken</span>
+        <h1>Neem <span class="accent">contact op</span></h1>
+        <p>Heb je een vraag of wil je een kennismakingsgesprek plannen? Vul het formulier in en ik neem binnen één werkdag contact met je op.</p>
+      </div>
+    </section>
+
+    <!-- ── CONTACT GRID ── -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Formulier -->
+          <div class="contact-form-card reveal">
+            <h2>Stuur een <span class="accent">bericht</span></h2>
+            <p>Vertel me kort wat je coachvraag is, dan kijk ik hoe ik je het beste kan helpen.</p>
+
+            <form action="https://formspree.io/f/jouw-id" method="POST">
+              <div class="form-group">
+                <label for="naam">Volledige naam</label>
+                <input type="text" id="naam" name="naam" placeholder="bijv. Henriëtte Toma" required>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mailadres</label>
+                <input type="email" id="email" name="email" placeholder="naam@domein.nl" required>
+              </div>
+              <div class="form-group">
+                <label for="telefoon">Telefoonnummer <span style="font-size:0.75rem; opacity:0.6; text-transform:none; letter-spacing:0;">(optioneel)</span></label>
+                <input type="tel" id="telefoon" name="telefoon" placeholder="06 12 34 56 78">
+              </div>
+              <div class="form-group">
+                <label for="onderwerp">Waar gaat je vraag over?</label>
+                <select id="onderwerp" name="onderwerp">
+                  <option value="Individuele Coaching">Individuele Coaching</option>
+                  <option value="Beeldcoaching">Beeldcoaching</option>
+                  <option value="Training op maat">Training op maat</option>
+                  <option value="Intervisie">Intervisie</option>
+                  <option value="Kennismakingsgesprek">Kennismakingsgesprek</option>
+                  <option value="Overig">Overig (vrije vraag)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="bericht">Jouw bericht</label>
+                <textarea id="bericht" name="bericht" rows="5" placeholder="Vertel me kort wat je coachvraag is..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;">Verstuur aanvraag →</button>
+            </form>
+          </div>
+
+          <!-- Contact info -->
+          <div class="reveal reveal-delay-2">
+            <div class="contact-info-card">
+              <h3>Bereikbaarheid</h3>
+
+              <div class="info-row">
+                <div class="info-icon">📍</div>
+                <div>
+                  <strong>Adres</strong>
+                  <p>Paulus Potterplein 25<br>3141 GJ Maassluis</p>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-icon">📞</div>
+                <div>
+                  <strong>Telefoon</strong>
+                  <a href="tel:0622270092">06 222 700 92</a>
+                </div>
+              </div>
+
+              <div class="info-row">
+                <div class="info-icon">✉️</div>
+                <div>
+                  <strong>E-mail</strong>
+                  <a href="mailto:info@tomacoaching.nl">info@tomacoaching.nl</a>
+                </div>
+              </div>
+
+              <div class="hours-list">
+                <h4>Openingstijden</h4>
+                <ul>
+                  <li>Maandag    <span>18.30 – 22.00</span></li>
+                  <li>Dinsdag    <span>12.00 – 22.00</span></li>
+                  <li>Woensdag   <span>09.00 – 22.00</span></li>
+                  <li>Donderdag  <span>18.30 – 22.00</span></li>
+                  <li>Vrijdag    <span>09.00 – 19.00</span></li>
+                  <li>Za &amp; Zo  <span style="opacity:0.45;">Gesloten</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Google Maps -->
+            <div style="margin-top: 20px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-sm);">
+              <iframe
+                title="Locatie Toma Coaching"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.847!2d4.2558!3d51.9233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5d3e2b2b2b2b3%3A0x0!2sPaulus+Potterplein+25%2C+3141+GJ+Maassluis!5e0!3m2!1snl!2snl!4v1700000000000"
+                width="100%"
+                height="240"
+                style="display:block; border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
